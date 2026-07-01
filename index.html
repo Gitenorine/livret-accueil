@@ -10,13 +10,22 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #0078D4, #00B4DB);
+            background: linear-gradient(135deg, #7ED9C4, #3CB9A0); /* vert d'eau */
             color: white;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             text-align: center;
+            position: relative;
+        }
+
+        .logo {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 80px;
+            max-width: 25%;
         }
 
         .container {
@@ -44,7 +53,7 @@
             font-size: 18px;
             font-weight: bold;
             background-color: white;
-            color: #0078D4;
+            color: #2F8F83;
             transition: 0.3s;
         }
 
@@ -52,7 +61,7 @@
             background-color: #f0f0f0;
         }
 
-        /* Responsive tweaks */
+        /* Responsive */
         @media (max-width: 500px) {
             h1 {
                 font-size: 22px;
@@ -62,25 +71,37 @@
                 font-size: 16px;
                 padding: 12px;
             }
+
+            .logo {
+                width: 60px;
+            }
         }
+
     </style>
 </head>
 
 <body>
 
-<div class="container">
-    <h1>Bienvenue</h1>
-    <p>Choisissez votre langue / Choose your language / Wählen Sie Ihre Sprache</p>
+    <!-- LOGO -->
+    <img src="logo.png" alt="Logo" class="logo">
 
-    <a href="livret-anglais.pdf" target="_blank" class="btn">
-        🇬🇧 English
-    </a>
+    <div class="container">
+        <h1>Bienvenue</h1>
+        <p>Choisissez votre langue / Choose your language / Wählen Sie Ihre Sprache</p>
 
-    <a href="livret-allemand.pdf" target="_blank" class="btn">
-        🇩🇪 Deutsch
-    </a>
+        <a href="livret-francais.pdf" target="_blank" class="btn">
+            🇫🇷 Français
+        </a>
 
-</div>
+        <a href="livret-anglais.pdf" target="_blank" class="btn">
+            🇬🇧 English
+        </a>
+
+        <a href="livret-allemand.pdf" target="_blank" class="btn">
+            🇩🇪 Deutsch
+        </a>
+    </div>
 
 </body>
 </html>
+``
