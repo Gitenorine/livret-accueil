@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livret d'accueil</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0078D4, #00B4DB);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 400px;
+            width: 90%;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+            font-size: 26px;
+        }
+
+        p {
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+
+        .btn {
+            display: block;
+            margin: 15px 0;
+            padding: 15px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: white;
+            color: #0078D4;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Responsive tweaks */
+        @media (max-width: 500px) {
+            h1 {
+                font-size: 22px;
+            }
+
+            .btn {
+                font-size: 16px;
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Bienvenue</h1>
+    <p>Choisissez votre langue / Choose your language / Wählen Sie Ihre Sprache</p>
+
+    <a href="livret-anglais.pdf" target="_blank" class="btn">
+        🇬🇧 English
+    </a>
+
+    <a href="livret-allemand.pdf" target="_blank" class="btn">
+        🇩🇪 Deutsch
+    </a>
+
+</div>
+
+</body>
+</html>
